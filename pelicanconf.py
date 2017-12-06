@@ -6,7 +6,7 @@ AUTHOR = u'Freelancer'
 SITENAME = u'Deep Learn Physics Data'
 TOP_TITLE = u'Deep Learn Physics <br> Open Data'
 TOP_SUBTITLE = 'Get data - Train net - Data challenge!'
-SITEURL = ''
+SITEURL = 'deeplearnphysics.org/DataChallenge'
 
 THEME = 'theme'
 THEME_STATIC_DIR = 'static'
