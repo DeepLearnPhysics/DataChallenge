@@ -2,12 +2,17 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Freelancer'
-SITENAME = u'Deep Learn Physics Data'
-TOP_TITLE = u'Deep Learn Physics <br> Open Data'
+AUTHOR       = u'Freelancer'
+SITENAME     = u'Deep Learn Physics Data'
+TOP_TITLE    = u'Deep Learn Physics <br> Open Data'
 TOP_SUBTITLE = 'Get data - Train net - Data challenge!'
-SITEURL = 'https://deeplearnphysics.org/DataChallenge'
+GROUPURL     = 'http://deeplearnphysics.org'
+BLOGURL      = GROUPURL + '/Blog'
+GITHUBURL    = 'https://github.com/DeepLearnPhysics'
+SITEURL      = GROUPURL + '/DataChallenge'
 #SITEURL = '' #uncomment for local development
+
+
 
 THEME = 'theme'
 THEME_STATIC_DIR = 'static'
