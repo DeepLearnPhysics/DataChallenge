@@ -2,23 +2,34 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Data Challenge</h2>
+                <h2>Challenge</h2>
                 <hr class="star-primary">
             </div>
         </div>
 
- 	        <div class="row">
-	            <div class="col-lg-4 col-lg-offset-2">
-	                <p>Train damn it.</p>
-	            </div>
-	            <div class="col-lg-4">
-	                <p>not yet?</p>
-	            </div>
-	            <div class="col-lg-8 col-lg-offset-2 text-center">
-	                <a href="https://github.com/ondoheer" target="_blank" class="btn btn-lg btn-outline">
-	                    <i class="fa fa-download">Go to my Github</i> 
-	                </a>
-	            </div>
+ 	     <div class="row">
+	        <div class="col-lg-6 col-lg-offset-0">
+	            <p>
+	            	<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/Entry078_data.png" alt="Muon" width="90%">
+	            </p>
 	        </div>
+	      	<div class="col-lg-6 col-lg-offset-0">
+	            <p>
+	            	Would you share your awesome network's performance on <strong>challenge</strong> data set? We would like to organize an informal competition for those who wish to try this on subset of open data with challenge samples. Please 
+	            	<a href="{{ CONTACT }}">contact us</a> to share your results. We expect the following format for different types of challenge.
+
+	            	<h4>Particle image classification</h4>
+	            	A CSV file with "entry" and "prediction" columns. The "entry" should be the integer index of an image in the file, and "prediction" should be the classification category index. One image entry per row. Here is a 
+	            	<a href="{{ BLOGURL }}/tutorial-05.html">tutorial example</a> to create such CSV file.
+
+	            	<h4>Particle detection</h4>
+	            	A larcv file with larcv::EventParticle data product. Please record particle type using
+	            	<a href="http://pdg.lbl.gov/2007/reviews/montecarlorpp.pdf">PDG code</a> and store 2D and/or 3D bounding box whichever is appropriate for the challenge data set. A tutorial example is to be posted.
+
+	            	<h4>Particle segmentation</h4>
+	            	A larcv file with larcv::EventClusterVoxel2D (for 2D) or larcv::EventClusterVoxel3D (for 3D) that saves your pixel-wise segmentation results. To associate your segmentation with annotation particle information, please also store larcv::EventParticle data product. A tutorial example is to be posted.
+	            </p>
+	        </div>
+	    </div>
     </div>
 </section>

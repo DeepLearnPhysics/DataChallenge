@@ -9,6 +9,7 @@ TOP_SUBTITLE = 'Get data - Train net - Data challenge!'
 GROUPURL     = 'http://deeplearnphysics.org'
 BLOGURL      = GROUPURL + '/Blog'
 GITHUBURL    = 'https://github.com/DeepLearnPhysics'
+CONTACT      = 'mailto:contact@deeplearnphysics.org'
 SITEURL      = GROUPURL + '/DataChallenge'
 #SITEURL = '' #uncomment for local development
 
@@ -47,8 +48,8 @@ DIRECT_TEMPLATES = ['index']
 NAVLINK_TOP='Top'
 NAVLINKS = (
 	('#page-top', ''),
-        ('#intro', 'Public Data'),
-        ('#trainnet', 'Train'),
+        ('#intro', 'Intro'),
+        ('#data', 'Public Data'),
         ('#datachallenge', 'Challenge'),
 	('#about', 'About Us')
     )
