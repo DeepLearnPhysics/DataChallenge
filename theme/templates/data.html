@@ -78,14 +78,15 @@
 	}
 	th, td {
 	    padding: 5px;
-   		text-align: left;
+   		text-align: center;
 	}
 </style>
         <div class="row">
             <div class="col-lg-12 col-md-offset-1">
-
-            	<h3> Practice/tutorials/tutorial Samples </h3>
-                <table style="width:80%">
+                <br>
+            	<h3><font color="blue"> Practice/Tutorial Samples </font></h3>
+                <p id="TutorialClassification"><strong>Tag</strong>: TutorialClassification</p>
+                <table style="width:90%">
                     <tr>
                         <td> File URL </td>
                         <td> Detector </td>
@@ -108,9 +109,39 @@
                         </td>
                     </tr>
                 </table>
+                <br>
+                <div id="TutorialSegmentation"">
+                <p><strong>Tag</strong>: TutorialSegmentation</p>
+                <table style="width:90%">
+                    <tr>
+                        <td> File URL </td>
+                        <td> Detector </td>
+                        <td> Task     </td>
+                        <td> Brief description </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://www.nevis.columbia.edu/~kazuhiro/public_data/v0.1.0/2d/segmentation/multipvtx/practice_train_2k.root" download>
+                                practice_train_2k.root
+                            </a>
+                            <a href="http://www.nevis.columbia.edu/~kazuhiro/public_data/v0.1.0/2d/segmentation/multipvtx/practice_test_2k.root" download>
+                                practice_test_2k.root
+                            </a>
+                        </td>
+                        <td> LArTPC </td>
+                        <td> 2D image segmentation / object detection </td>
+                        <td>
+                            Semantic segmentation train data set include 2D images each containing a varying multiplicity of particles from five possible types (electron, gamma ray, muon, charged pion, and proton). The "segment" image contains 3 class of semantics: background, EM-shower particles, and track particles (i.e. not EM-shower). In each image all primary particles are generated from one point, called event vertex, which position is randomized across events. There may be secondary particles produced at by primaries. These files are <strong>prepared for tutorial purpose</strong> containing 2,000 images separately for train and test set. Images are made by projecting simulated 3D particle energy deposition profiles on 2D planes (xy, yz, zx projections in cartesian coordinate). The files also contain simulation information about individual particles as well as clustered energy deposition information per particle to help algorithm development. Particle information contains a rectangular bounding box that can be used for an object detection training.
+                        </td>
+                    </tr>
+                </table>
+                </div>
 
-            	<h3> Single Particle Identification</h3>
-                <table style="width:80%">
+                <br>
+            	<h3><font color="blue"> Single Particle Sample </font></h3>
+                <div  id="ChallengeClassification">
+                <p><strong>Tag</strong>: ChallengeClassification</p>
+                <table style="width:90%">
                     <tr>
                         <td> File URL </td>
                         <td> Detector </td>
@@ -132,12 +163,43 @@
                         <td> LArTPC </td>
                         <td> 2D image classification </td>
                         <td>
-                            Image classification train data set consists of five particle types (electron, gamma ray, muon, charged pion, and proton). 50,000 images separately for train and test set. In each set you find one particle per image. The fraction of each particle image in the whole set is same (10,000 images per particle type in train set, 8,000 per particle in test set). Images are made by projecting simulated 3D particle energy deposition profiles on 2D planes (xy, yz, zx projections in cartesian coordinate). Challenge set contains 40,000 images without label information.
+                            Image classification train data set consists of five particle types (electron, gamma ray, muon, charged pion, and proton). 50,000 and 40,000 images separately for train and test set respectively. In each set you find one particle per image. The fraction of each particle image in the whole set is same (10,000 images per particle type in train set, 8,000 per particle in test set). Images are made by projecting simulated 3D particle energy deposition profiles on 2D planes (xy, yz, zx projections in cartesian coordinate). Challenge set contains 40,000 images without label information. All files contain statistically independnet samples.
                         </td>
                     </tr>
                 </table>
+                </div>
 
-
+                <br>
+                <h3><font color="blue"> Multiple Particle Sample </font></h3>
+                <div id="ChallengeSegmentation">
+                <p><strong>Tag</strong>: ChallengeSegmentation</p>
+                <table style="width:90%">
+                    <tr>
+                        <td> File URL </td>
+                        <td> Detector </td>
+                        <td> Task     </td>
+                        <td> Brief description </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://www.nevis.columbia.edu/~kazuhiro/public_data/v0.1.0/2d/segmentation/multipvtx/train_15k.root" download>
+                                train_15k.root
+                            </a>
+                            <a href="http://www.nevis.columbia.edu/~kazuhiro/public_data/v0.1.0/2d/segmentation/multipvtx/test_10k.root" download>
+                                test_10k.root
+                            </a>
+                            <a href="http://www.nevis.columbia.edu/~kazuhiro/public_data/v0.1.0/2d/segmentation/multipvtx/challenge_10k.root" download>
+                                challenge_10k.root
+                            </a>
+                        </td>
+                        <td> LArTPC </td>
+                        <td> 2D image segmentation / object detection </td>
+                        <td>
+                            Semantic segmentation train data set include 2D images each containing a varying multiplicity of particles from five possible types (electron, gamma ray, muon, charged pion, and proton). The "segment" image contains 3 class of semantics: background, EM-shower particles, and track particles (i.e. not EM-shower). In each image all primary particles are generated from one point, called event vertex, which position is randomized across events. There may be secondary particles produced at by primaries. 15,000 and 10,000 images for train and test set respectively. Challenge set contains 10,000 images without label information. All files contain statistically independnet samples. Images are made by projecting simulated 3D particle energy deposition profiles on 2D planes (xy, yz, zx projections in cartesian coordinate). The files also contain simulation information about individual particles as well as clustered energy deposition information per particle to help algorithm development. Particle information contains a rectangular bounding box that can be used for an object detection training.
+                        </td>
+                    </tr>
+                </table>
+                </div>
             </div>
         </div>
     </div>
