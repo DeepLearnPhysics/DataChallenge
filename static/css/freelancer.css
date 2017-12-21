@@ -190,6 +190,11 @@ section h2 {
     font-size: 3em;
 }
 
+section h3 {
+    margin: 0;
+    font-size: 2.4em;
+}
+
 section.success {
     color: #fff;
     background: #18bc9c;
@@ -247,7 +252,7 @@ section.success {
     margin-top: -12px;
 }
 
-#trainnet .trainnet-item .trainnet-link .caption .caption-content h3,
+/*#trainnet .trainnet-item .trainnet-link .caption .caption-content h3,*/
 #trainnet .trainnet-item .trainnet-link .caption .caption-content h4 {
     margin: 0;
 }
@@ -304,7 +309,7 @@ section.success {
     margin-top: -12px;
 }
 
-#datachallenge .datachallenge-item .datachallenge-link .caption .caption-content h3,
+/*#datachallenge .datachallenge-item .datachallenge-link .caption .caption-content h3,*/
 #datachallenge .datachallenge-item .datachallenge-link .caption .caption-content h4 {
     margin: 0;
 }
